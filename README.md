@@ -49,24 +49,42 @@ All in one clean web app.
 ## 🧠 Tech Stack
 
 ### Frontend
-- React + TypeScript
-- Tailwind CSS
-- Framer Motion
-- Lucide Icons
+- React + TypeScript  
+- Tailwind CSS  
+- Framer Motion  
+- Lucide Icons  
 
 ### Backend
-- Node.js / Express
-- REST APIs
-- Hosted on Render
+- **FastAPI (main.py)**  
+- REST APIs  
+- Hosted on Render  
 
 ### Machine Learning
-- Image classification model
-- Waste type detection
+- **YOLOv8n (custom trained)**  
+- Waste type detection  
 
 ### Maps & Location
-- Custom interactive SVG map
-- Geolocation-based filtering
+- Geopy + Nominatim  
+- Google Maps API  
 
+---
+
+## 🛠️ Installation
+
+### Backend
+```
+cd backend
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+### Frontend
+```
+cd frontend
+npm install
+npm run dev
+```
 ---
 
 ## 📸 Demo
